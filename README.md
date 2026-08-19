@@ -3,6 +3,12 @@ This repository serves as a starter template for developing *Minecraft: Bedrock 
 
 The official supported approach uses Visual Studio Code using extensions (see https://learn.microsoft.com/en-us/minecraft/creator/documents/scripting/developer-tools?view=minecraft-bedrock-stable), but this starter template allows seemless integration with a more robust IDE like Visual Studio 2022.
 
+> [!IMPORTANT]
+> After an update to the internal file structure of Minecraft Bedrock, you will have to create the following junction to maintain functionality with the new location:
+> ```
+> mklink /J "C:\Users\<YOUR USERNAME HERE>\AppData\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\development_behavior_packs" "C:\Users\<YOUR USERNAME HERE>\AppData\Roaming\Minecraft Bedrock\users\shared\games\com.mojang\development_behavior_packs"
+> ```
+
 ## Setup Instructions
 1. After cloning this template, run `npm install` in a Developer Powershell window.
 2. Open the file `.env`. This contains the environment variables to use to configure project:
