@@ -14,7 +14,7 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Build Release Distributon",
+      "name": "Build Release Distribution",
       "skipFiles": [ "<node_internals>/**" ],
       "runtimeExecutable": "npm",
       "args": [ "run", "mcaddon" ],
